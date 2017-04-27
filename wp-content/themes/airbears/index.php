@@ -12,8 +12,15 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+		<?php wp_head(); ?>
 	</head>
 	<body>
-		<h1>Hello, AirBears!</h1>
+		<?php get_header(); ?>
+
+		<?php get_template_part('main'); ?>
+
+		<?php get_footer(); ?>
+
+		<?php wp_footer(); ?>
 	</body>
 </html>

@@ -6,23 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="AirBears" />
 		<meta name="description" content="Using drone technology to benefit all life." />
-		<title>AirBears</title>
+		<title><?php echo get_bloginfo('name'); ?></title>
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-		<?php wp_head(); ?>
 	</head>
 	<body>
-		<?php get_header(); ?>
 
-		<?php wp_list_pages( '&title_li=' ); ?>
+		<?php get_header(); ?>
 
 		<?php get_template_part('main'); ?>
 
 		<?php get_footer(); ?>
 
-		<?php wp_footer(); ?>
 	</body>
 </html>

@@ -17,6 +17,8 @@
 	<body>
 		<?php get_header(); ?>
 
+		<?php wp_list_pages( '&title_li=' ); ?>
+
 		<?php get_template_part('main'); ?>
 
 		<?php get_footer(); ?>

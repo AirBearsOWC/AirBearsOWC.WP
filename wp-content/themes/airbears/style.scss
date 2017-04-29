@@ -3,6 +3,28 @@ Theme Name: AirBears Custom Theme
 Author: Mighty Morphin' Pixel Pushers
 Version: 0.0.1
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700');
+$ab-font: 'Roboto', sans-serif;
+$ab-font-head: 'Roboto Slab', sans-serif;
+
+$blue-dark:	#13293D;
+$blue-med:	#4787C7;
+$blue-lt:	#C6D2EB;
+$white:		#FFFFFF;
+$red-dark:	#791316;
+$orange:	#F36C24;
+$brown:		#43281C;
+$brown-lt:	#C3B4A6;
+
+$ab-color-text:			$blue-dark;
+$ab-color-link: 		$blue-med;
+$ab-color-callout:		$blue-lt;
+$ab-color-nav-bg: 		$blue-dark;
+$ab-color-nav-text: 	$white;
+$ab-color-nav-edge: 	$red-dark;
+$ab-color-nav-hover:	$orange;
+
 body{
-	font-family:Helvetica;
+	font-family:$ab-font;
+	color:$ab-color-text;
 }

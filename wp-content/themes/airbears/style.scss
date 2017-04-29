@@ -24,7 +24,7 @@ $ab-color-nav-text: 	$white;
 $ab-color-nav-edge: 	$red-dark;
 $ab-color-nav-hover:	$orange;
 
-$nav-height:50px;
+$nav-height:80px;
 
 * {
 	margin: 0;
@@ -45,9 +45,8 @@ html, body, div{
 html, body {
 	font-family:$ab-font;
 	color:$ab-color-text;
-	font-size:14px;
-	line-height:20px;
-	text-shadow: 1px 1px 0px #fff;
+	font-size:18px;
+	line-height:30px;
 }
 h1{
 	font-family:$ab-font-head;
@@ -78,4 +77,25 @@ nav{
 	color:$ab-color-nav-text;
 	height:$nav-height;
 	width:100%;
+	border-bottom:6px solid $ab-color-nav-edge;
+	box-sizing:border-box;
+
+	display:flex;
+	flex-direction:row;
+	& > *{
+		text-decoration:none;
+		line-height:$nav-height;
+		flex-grow:1;
+		text-align:center;
+		&:hover{
+			background-color:$ab-color-nav-hover;
+		}
+		&[href=""]{
+			flex-grow:2;
+			&:hover{
+				cursor:default;
+				background-color:transparent;
+			}
+		}
+	}
 }

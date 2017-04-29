@@ -1,8 +1,10 @@
 <?php $menu_items = wp_get_nav_menu_items(get_nav_menu_locations()['nav-bar']); ?>
 <nav>
-	<ul>
+	<a href="<?php echo home_url(); ?>">
+		<?php echo get_bloginfo('name'); ?>
+	</a>
 <?php foreach($menu_items as $item): ?>
-		<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+	<a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
 <?php endforeach; ?>
-	</ul>
+	<a href="#">Login</a>
 </nav>

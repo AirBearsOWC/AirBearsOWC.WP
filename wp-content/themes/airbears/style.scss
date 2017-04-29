@@ -17,6 +17,7 @@ $brown:		#43281C;
 $brown-lt:	#C3B4A6;
 
 $ab-color-text:			$blue-dark;
+$ab-color-head:			$blue-dark;
 $ab-color-link: 		$blue-med;
 $ab-color-callout:		$blue-lt;
 $ab-color-nav-bg: 		$blue-dark;
@@ -24,7 +25,41 @@ $ab-color-nav-text: 	$white;
 $ab-color-nav-edge: 	$red-dark;
 $ab-color-nav-hover:	$orange;
 
-body{
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	text-decoration: inherit;
+	line-height: inherit;
+	color: inherit;
+	background-color:transparent;
+}
+html, body, div{
+	position:relative;
+}
+html, body {
 	font-family:$ab-font;
 	color:$ab-color-text;
+	font-size:14px;
+	line-height:20px;
+	text-shadow: 1px 1px 0px #fff;
+}
+h1{
+	font-family:$ab-font-head;
+	font-size:3.75em;
+	line-height:4.5em;
+	color:$ab-color-head;
+}
+h2{
+	font-family:$ab-font-head;
+	font-size:1.75em;
+	line-height:2.5em;
+	color:$ab-color-head;
+}
+a{
+	text-decoration:underline;
 }

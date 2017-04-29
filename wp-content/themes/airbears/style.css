@@ -4,7 +4,46 @@ Author: Mighty Morphin' Pixel Pushers
 Version: 0.0.1
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700");
-body {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+html, body, div {
+  position: relative;
+}
+
+html, body {
   font-family: "Roboto", sans-serif;
   color: #13293D;
+  font-size: 14px;
+  line-height: 20px;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 3.75em;
+  line-height: 4.5em;
+  color: #13293D;
+}
+
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.75em;
+  line-height: 2.5em;
+  color: #13293D;
+}
+
+a {
+  text-decoration: underline;
 }

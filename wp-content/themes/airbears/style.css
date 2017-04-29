@@ -70,14 +70,25 @@ nav > * {
   line-height: 80px;
   flex-grow: 1;
   text-align: center;
+  vertical-align: middle;
+  font-weight: lighter;
 }
 nav > *:hover {
   background-color: #F36C24;
 }
 nav > *[href=""] {
-  flex-grow: 2;
+  flex-grow: 10;
 }
 nav > *[href=""]:hover {
   cursor: default;
   background-color: transparent;
+}
+nav > .logo {
+  font-weight: bold;
+}
+nav > .logo img {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
 }

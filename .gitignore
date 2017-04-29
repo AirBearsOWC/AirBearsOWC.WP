@@ -9,3 +9,4 @@ secrets.*
 *.css.map
 bower_components/*
 wp-config.php
+*/uploads/*

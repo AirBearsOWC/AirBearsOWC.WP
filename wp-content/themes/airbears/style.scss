@@ -87,15 +87,26 @@ nav{
 		line-height:$nav-height;
 		flex-grow:1;
 		text-align:center;
+		vertical-align:middle;
+		font-weight:lighter;
 		&:hover{
 			background-color:$ab-color-nav-hover;
 		}
 		&[href=""]{
-			flex-grow:2;
+			flex-grow:10;
 			&:hover{
 				cursor:default;
 				background-color:transparent;
 			}
+		}
+	}
+	& > .logo{
+		font-weight:bold;
+		img{
+			width:0.75 * $nav-height;
+			height:0.75 * $nav-height;
+			display:inline-block;
+			vertical-align:middle;
 		}
 	}
 }

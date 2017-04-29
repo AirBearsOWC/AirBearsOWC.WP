@@ -15,11 +15,17 @@
 	</head>
 	<body>
 
-		<?php get_header(); ?>
+		<?php get_template_part('nav'); ?>
+
+		<?php if(is_home()): ?>
+			<?php get_template_part('hero'); ?>
+		<?php else: ?>
+			<?php get_template_part('header'); ?>
+		<?php endif; ?>
 
 		<?php get_template_part('main'); ?>
 
-		<?php get_footer(); ?>
+		<?php get_template_part('footer'); ?>
 
 	</body>
 </html>

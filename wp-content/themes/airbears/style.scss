@@ -25,6 +25,8 @@ $ab-color-nav-text: 	$white;
 $ab-color-nav-edge: 	$red-dark;
 $ab-color-nav-hover:	$orange;
 
+$nav-height:50px;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -51,7 +53,7 @@ html, body {
 h1{
 	font-family:$ab-font-head;
 	font-size:3.75em;
-	line-height:4.5em;
+	line-height:1.8em;
 	color:$ab-color-head;
 }
 h2{
@@ -62,4 +64,19 @@ h2{
 }
 a{
 	text-decoration:underline;
+}
+
+body{
+	padding-top:$nav-height;
+	box-sizing:border-box;
+}
+nav{
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:$ab-color-nav-bg;
+	color:$ab-color-nav-text;
+	height:$nav-height;
+	width:100%;
 }

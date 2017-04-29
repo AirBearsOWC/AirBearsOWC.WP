@@ -33,7 +33,7 @@ html, body {
 h1 {
   font-family: "Roboto Slab", sans-serif;
   font-size: 3.75em;
-  line-height: 4.5em;
+  line-height: 1.8em;
   color: #13293D;
 }
 
@@ -46,4 +46,20 @@ h2 {
 
 a {
   text-decoration: underline;
+}
+
+body {
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #13293D;
+  color: #FFFFFF;
+  height: 50px;
+  width: 100%;
 }

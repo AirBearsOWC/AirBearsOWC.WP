@@ -40,3 +40,13 @@ The instructions are actually really easy. They're only long because I was anal-
 1. Follow the installation instructions. The username and password don't matter at all because they'll only exist on your computer, so make them easy.
 1. That's it. To edit the CSS, open this file:
 	* `airbears_wp / wp-content / themes / airbears / style.css`
+
+### SASS
+
+SASS is a much easier way to write CSS. I put SASS/SCSS in `style.scss`, and then it compiles to `style.css`.
+
+```sh
+$ gem install sass
+$ cd wp-content/themes/airbears
+$ sass --style expanded --watch --sourcemap=none style.scss
+```

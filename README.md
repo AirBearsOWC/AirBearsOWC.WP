@@ -40,13 +40,19 @@
 	* Customize the Menus
 	* Customize the Theme with the site name, tag line, and logo
 
-## Editing CSS
+## Editing Stuff
 
-### If you don't want to use SASS
+### Content
+
+Go to http://localhost/wp-admin. Log in with `airbears` and `airbears123!`.
+
+### CSS
+
+#### If you don't want to use SASS
 
 Just edit `wp-content/themes/airbears/style.css`
 
-### If you want to use SASS
+#### If you want to use SASS
 
 SASS is a much easier way to write CSS. I put SASS/SCSS in `sassymolassy.scss`. When you run the `sass` command below, it compiles to `sassymolassy.css`.
 
@@ -55,3 +61,9 @@ $ gem install sass
 $ cd wp-content/themes/airbears
 $ sass --style expanded --watch --sourcemap=none sassymolassy.scss
 ```
+
+### HTML
+
+All the HTML is in `wp-content/themes/airbears`, inside the .PHP files. All the different PHP files are parts of the template, split into separate files for reusability. To see how they fit together, look at `index.php`. Notice the `get_template_part` lines, which refer to other .PHP files in the `airbears` folder (except for `functions.php`, which does some other stuff).
+
+*Note that the navigation menu across the top should be edited from the Wordpress dashboard.* Go to Appearance > Menus.

@@ -60,7 +60,7 @@ nav {
   display: flex;
   flex-direction: row;
 }
-nav > * {
+nav > a {
   text-decoration: none;
   line-height: 80px;
   flex-grow: 1;
@@ -68,15 +68,11 @@ nav > * {
   vertical-align: middle;
   font-weight: lighter;
 }
-nav > *:hover {
+nav > a:hover {
   background-color: #F36C24;
 }
-nav > *[href=""] {
+nav > .space {
   flex-grow: 10;
-}
-nav > *[href=""]:hover {
-  cursor: default;
-  background-color: transparent;
 }
 nav > .logo {
   font-weight: bold;

@@ -77,7 +77,7 @@ nav{
 
 	display:flex;
 	flex-direction:row;
-	& > *{
+	& > a{
 		text-decoration:none;
 		line-height:$nav-height;
 		flex-grow:1;
@@ -87,13 +87,9 @@ nav{
 		&:hover{
 			background-color:$ab-color-nav-hover;
 		}
-		&[href=""]{
-			flex-grow:10;
-			&:hover{
-				cursor:default;
-				background-color:transparent;
-			}
-		}
+	}
+	& > .space{
+		flex-grow:10;
 	}
 	& > .logo{
 		font-weight:bold;

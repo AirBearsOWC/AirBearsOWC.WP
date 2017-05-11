@@ -24,13 +24,15 @@
 1. Click "Preferences"
 1. Click the "Web Server" tab
 1. Click the little gray folder icon by "Document Root"
-1. Select the folder you downloaded from Github. It's probably named `airbears_wp`.
+1. Select the folder you downloaded from Github. It's probably named `AirBearsOWC.wp`
+1. Click the 'Ports' tab
+1. Click 'Set Web & MySQL ports to 80 & 3306'
 1. Click 'OK'
 1. Click 'Start Servers'
 
 ### Wordpress Setup
 
-1. Open your web browser to `http://localhost:8888`
+1. Open your web browser to `http://localhost`
 1. Follow the installation instructions. The username and password don't matter at all because they'll only exist on your computer, so make them easy.
 1. That's it! Now you'll need to:
 	* Create Pages

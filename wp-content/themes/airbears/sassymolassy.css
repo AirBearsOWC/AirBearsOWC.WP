@@ -18,7 +18,7 @@ html, body, div {
 
 html, body {
   font-family: "Roboto", sans-serif;
-  color: #13293D;
+  color: #13293d;
   font-size: 18px;
   line-height: 30px;
 }
@@ -27,14 +27,14 @@ h1 {
   font-family: "Roboto Slab", sans-serif;
   font-size: 3.75em;
   line-height: 1.8em;
-  color: #13293D;
+  color: #13293d;
 }
 
 h2 {
   font-family: "Roboto Slab", sans-serif;
   font-size: 1.75em;
   line-height: 2.5em;
-  color: #13293D;
+  color: #13293d;
 }
 
 a {
@@ -46,21 +46,15 @@ body {
   box-sizing: border-box;
 }
 
-nav {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #13293D;
-  color: #FFFFFF;
-  height: 80px;
-  width: 100%;
-  border-bottom: 6px solid #791316;
-  box-sizing: border-box;
+footer, nav {
   display: flex;
+  background-color: #13293d;
+  box-sizing: border-box;
   flex-direction: row;
+  width: 100%;
+  color: #ffffff;
 }
-nav > a {
+footer > a, nav > a {
   text-decoration: none;
   line-height: 80px;
   flex-grow: 1;
@@ -68,18 +62,26 @@ nav > a {
   vertical-align: middle;
   font-weight: lighter;
 }
-nav > a:hover {
-  background-color: #F36C24;
+footer > a:hover, nav > a:hover {
+  background-color: #f36c24;
 }
-nav > .space {
+footer > .space, nav > .space {
   flex-grow: 10;
 }
-nav > .logo {
+footer > .logo, nav > .logo {
   font-weight: bold;
 }
-nav > .logo img {
+footer > .logo img, nav > .logo img {
   width: 60px;
   height: 60px;
   display: inline-block;
   vertical-align: middle;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  border-bottom: 6px solid #791316;
 }
